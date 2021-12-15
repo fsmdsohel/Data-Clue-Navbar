@@ -53,13 +53,6 @@ header {
   align-items: center;
 }
 
-.nav_wrapper>.logo>span {
-  font-size: 28px;
-  background-image: linear-gradient(45deg, #2d3a8c, #01adee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .nav_wrapper>.logo>img {
   width: 36px;
 }
@@ -225,7 +218,21 @@ main {
   display: none;
 }
 
+
+.navbar.active .nav_wrapper>.logo>span,
+.navbar.activemobile .nav_wrapper>.logo>span {
+  background-image: linear-gradient(45deg, #2d3a8c, #01adee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.logo>span {
+  color: #fff;
+  font-size: 28px;
+}
+
 @media (max-width:768px) {
+
   #offering_items {
     display: none;
   }
