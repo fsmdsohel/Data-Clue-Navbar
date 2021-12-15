@@ -99,19 +99,19 @@ header {
 }
 
 .nav_wrapper>.icons>.icon>.fa-bars {
-  display: inline;
+  display: none;
 }
 
 .nav_wrapper>.icons>.icon>.fa-times {
-  display: none;
+  display: inline;
 }
 
 .nav_wrapper>.icons>.icon.active>.fa-bars {
-  display: none;
+  display: inline;
 }
 
 .nav_wrapper>.icons>.icon.active>.fa-times {
-  display: inline;
+  display: none;
 }
 
 .nav_wrapper>.icons i {

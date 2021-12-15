@@ -6,6 +6,7 @@ const mobileMenu = document.querySelector(".mobile_menu");
 
 const handleHumbergerMenu = () => {
   mobileMenu.classList.toggle("active");
+  humbergerMenu.classList.toggle("active");
 };
 
 humbergerMenu.addEventListener("click", handleHumbergerMenu);
