@@ -86,7 +86,7 @@ header {
   color: #284595;
 }
 
-.nav_wrapper>.nav_menu>ul>li>.nav_link.active {
+.navbar.active .nav_wrapper>.nav_menu>ul>li>.nav_link.active {
   color: #6ac403;
 }
 
@@ -104,20 +104,16 @@ header {
   cursor: pointer;
 }
 
-.nav_wrapper>.icons>.icon>.fa-bars {
-  display: none;
-}
-
 .nav_wrapper>.icons>.icon>.fa-times {
-  display: inline;
+  display: none;
 }
 
 .nav_wrapper>.icons>.icon.active>.fa-bars {
-  display: inline;
+  display: none;
 }
 
 .nav_wrapper>.icons>.icon.active>.fa-times {
-  display: none;
+  display: inline;
 }
 
 .nav_wrapper>.icons i {
@@ -224,18 +220,27 @@ main {
   padding-top: 120px;
 }
 
-/*
+
 #handleHumbergerMenu {
   display: none;
-} */
+}
 
 @media (max-width:768px) {
+  #offering_items {
+    display: none;
+  }
 
-  .navbar {
+  #humberMenu {
+    display: none;
+  }
+
+
+  .navbar.active,
+  .navbar.activemobile {
     background-color: #fff;
   }
 
-  .navbar.active {
+  .navbar {
     background-color: transparent;
   }
 
@@ -248,7 +253,11 @@ main {
   }
 
   .navbar .nav_wrapper>.icons i {
-    color: #000;
+    color: #fff;
+  }
+
+  #handleHumbergerMenu.active i {
+    color: #284595;
   }
 
   #handleHumbergerMenu {
@@ -275,7 +284,7 @@ main {
     background-color: rgba(255, 255, 255, 0.754);
   }
 
-  .mobile_menu.active>ul {
+  .mobile_menu.activemobile>ul {
     position: static;
     opacity: 1;
     pointer-events: all;
